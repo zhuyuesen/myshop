@@ -2,9 +2,8 @@
 
 include '../../public/common/config.php';
 
-$sql = "select comment.*,user.username,shop.id shopid,shop.name shopname from comment,user,shop where comment.user_id = user.id and comment.shop_id = shop.id";
+$sql = "select * from status";
 $res = mysqli_query($conn, $sql);
-
 ?>
 <!doctype html>
 <html lang="en">
@@ -14,16 +13,19 @@ $res = mysqli_query($conn, $sql);
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../public/css/common.css">
-    <title>评价管理</title>
+    <title>订单状态管理</title>
     <style>
-        table {
+        table{
             width: 50%;
             margin: 0 auto;
             text-align: center;
         }
-
-        td {
+        td{
             border-top: none;
+        }
+        .text-center{
+            text-align: center;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -32,30 +34,24 @@ $res = mysqli_query($conn, $sql);
     <table cellpadding="0" cellspacing="0">
         <tr>
             <th>编号</th>
-            <th>用户</th>
-            <th>商品</th>
-            <th>评论</th>
-            <th>时间</th>
+            <th>状态</th>
+            <th>修改</th>
             <th>删除</th>
         </tr>
         <?php
 
-        /*        echo "<pre>";
-                print_r(mysqli_fetch_assoc($res));
-                echo "</pre>";*/
 
-//        var_dump(mysqli_fetch_assoc($res));
+
         while ($row = mysqli_fetch_assoc($res)) {
             echo "<tr><td> {$row['id']}</td> " .
-                "<td>{$row['username']}</td>" .
-                "<td>{$row['shopname']}</td>" .
-                "<td max-width='400px'>{$row['content']}</td>" .
-                "<td>".date('Y-m-d',$row['time'])."</td>".
+                "<td>{$row['name']}</td>" .
+                "<td><a href='edit.php?id={$row['id']}&name={$row['name']}'>修改</a></td>" .
                 "<td><a href='delete.php?id={$row['id']}'>删除</a></td>" .
-                 "</tr>";
+                "</tr>";
         }
         ?>
     </table>
+    <p class="text-center"><a href="add.php">增加状态</a></p>
 </div>
 </body>
 </html>
