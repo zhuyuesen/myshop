@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.main{
+    box-sizing: border-box;
+    padding: 20px;
+}
+table{
+}
+th,td{
+    border: 1px solid #eee;
+    line-height: 40px;
+}
+
+.form_control{
+    height: 50px;
+}
+.form_control .label{
+    display: inline-block;vertical-align: middle;
+    line-height: 50px;
+    width: 80px;
+}
+.btn{
+    padding: 10px 50px;
+}
+
+.form_control input[type='text']{
+    height: 30px;
+}
+.form_control select{
+    height: 30px;
+    padding:  0 15px;
+}
