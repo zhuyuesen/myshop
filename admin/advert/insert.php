@@ -1,29 +1,34 @@
 <?php
 include '../../public/common/config.php';
 
-$name = $_POST['name'];
+$title = $_POST['title'];
+$pos = $_POST['pos'];
+$url = $_POST['url'];
 
+$imgerr = $_FILES['img']['error'];
 
-//$sql="insert into user(username,password) values('{$username}','{$password}')";
+if($imgerr == 0){
+    $src = $_FILES['img']['tmp_name'];
 
-$sql = "insert into class(name) values('{$name}')";
-/*
-INSERT INTO `user` (`username`, `password`) VALUES ( 'wlz', 'asd')
+    $name = $_FILES['img']['name'];
 
-INSERT INTO `user` (`id`, `username`, `password`, `isadmin`) VALUES (NULL, 'zys', MD5('123'), '0');*/
+//    var_dump($_FILES);
+//    exit();
 
+    if(move_uploaded_file($src,'../../public/uploads/'.$name)){
+        $sql="insert advert set pos='{$pos}',title='{$title}',url='{$url}',img='{$name}'";
 
+        if(mysqli_query($conn,$sql)){
+            echo '<script>location="index.php"</script>';
+        }
+    }else{
+        echo "保存图片出错";
+    }
 
-
-/*echo  $sql;
-exit();*/
-
-$res = mysqli_query($conn, $sql);
-
-if (!$res) {
-    die('无法插入数据' . mysqli_error($conn));
-} else {
-    echo '<script>location="index.php"</script>';
+}else{
+    echo "请上传图片";
 }
+
+
 
 ?>

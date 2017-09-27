@@ -32,6 +32,7 @@ $res = mysqli_query($conn, $sql);
             <th>编号</th>
             <th>图片</th>
             <th>排序</th>
+            <th>标题</th>
             <th>url</th>
             <th>修改</th>
             <th>删除</th>
@@ -45,8 +46,9 @@ $res = mysqli_query($conn, $sql);
 
         while ($row = mysqli_fetch_assoc($res)) {
             echo "<tr><td> {$row['id']}</td> " .
-                "<td><img src='../../public/uploads/".$row['img']."' alt=''></td>" .
+                "<td><img src='../../public/uploads/".$row['img']."' alt='' width='200px'></td>" .
                 "<td> {$row['pos']}</td> ".
+                "<td> {$row['title']}</td> ".
                 "<td> {$row['url']}</td> ".
                 "<td><a href='edit.php?id={$row['id']}'>修改</a></td>" .
                 "<td><a href='delete.php?id={$row['id']}&img={$row['img']}'>删除</a></td>" .
