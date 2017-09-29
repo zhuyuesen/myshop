@@ -1,5 +1,5 @@
 <?php
-
+include "../lock.php";
 include '../../public/common/config.php';
 
 $sql = "select * from status";

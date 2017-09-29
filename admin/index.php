@@ -1,11 +1,13 @@
-
+<?php
+include "./lock.php"
+?>
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>index</title>
 </head>
-<frameset rows='100,*' frameborder='0'>
+<frameset rows='60,*' frameborder='0'>
 	<frame src='top.php' name='top'>
 	<frameset cols='170,*'>
 		<frame src='left.php' name='left'>

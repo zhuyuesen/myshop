@@ -81,7 +81,7 @@
 	<h4>系统管理</h4>
 	<div>
 		<p><a href="adminpass.php" target='right'>|-修改口令</a></p>
-		<p><a href="logout.php" target='_top' onclick="return confirm('您确认滚犊子吗?')">|-退出系统</a></p>
+		<p><a href="logout.php" target='_top' onclick="return confirm('确定退出吗?')">|-退出系统</a></p>
 		<p><a href="../index.php" target='_blank'>|-网站首页</a></p>
 	</div>
 </body>

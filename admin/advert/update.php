@@ -1,4 +1,5 @@
 <?php
+include "../lock.php";
 include '../../public/common/config.php';
 include '../../public/common/function.php';
 
@@ -19,7 +20,6 @@ if($imgerror===0){
     $name=$_FILES['img']['name'];
 
     if(move_uploaded_file($src,'../../public/uploads/'.$name)){
-
 
         //删除原图
         $oldfile="../../public/uploads/{$imgsrc}";

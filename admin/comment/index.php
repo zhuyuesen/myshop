@@ -1,5 +1,5 @@
 <?php
-
+include "../lock.php";
 include '../../public/common/config.php';
 
 $sql = "select comment.*,user.username,shop.id shopid,shop.name shopname from comment,user,shop where comment.user_id = user.id and comment.shop_id = shop.id";

@@ -1,5 +1,5 @@
 <?php
-
+include "../lock.php";
 include '../../public/common/config.php';
 
 $sql="select brand.*,class.name cname from brand,class where brand.class_id=class.id";

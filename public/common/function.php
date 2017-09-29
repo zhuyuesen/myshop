@@ -1,6 +1,8 @@
 <?php
-// 验证码函数
+header("Content-Type:text/html;Charset=UTF-8");// 设置页面的编码风格
+header("Content-Type:image/jpeg");// 通知浏览器输出的是jpeg格式的图像
 
+// 验证码函数
 function vcode(){
     //开启session
     session_start();
@@ -15,7 +17,7 @@ function vcode(){
     // 3.在画布上画图像或文字
     imagefill($img,0,0,$black);
 
-    $arr=array_merge(range(0,9),range(a,z),range(A,Z));
+    $arr=array_merge(range(0,9),range("a","z"),range("A","Z"));
     shuffle($arr);
     $rand=join('',array_slice($arr,0,4));
 
@@ -34,7 +36,6 @@ function vcode(){
     // 5.释放画布资源
     imagedestroy($img);
 }
-
 
 //图片缩放函数
 function thumb($simg,$dw,$dh){

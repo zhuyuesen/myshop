@@ -1,4 +1,5 @@
 <?php
+include "../lock.php";
 include '../../public/common/config.php';
 
 $title = $_POST['title'];
