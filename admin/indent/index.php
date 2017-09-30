@@ -17,7 +17,7 @@ var_dump($res);
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../public/css/common.css">
-    <title>品牌管理</title>
+    <title>订单管理</title>
     <style>
         table{
             width: 50%;
@@ -52,8 +52,8 @@ var_dump($res);
                 "<td>".date('Y-m-d',$row['time'])."</td>" .
                 "<td>{$row['sname']}</td>" .
                 "<td><a href='javascript:;'>联系方式</a></td>" .
-                "<td><a href='edit.php?code={$row['code']}'>修改</a></td>" .
-                "<td><a href='delete.php?id={$row['id']}'>删除</a></td>" .
+                "<td><a href='edit.php?code={$row['code']}&status_id={$row['status_id']}'>修改</a></td>" .
+                "<td><a href='delete.php?code={$row['code']}'>删除</a></td>" .
                 "</tr>";
         }
         ?>

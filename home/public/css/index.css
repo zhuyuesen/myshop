@@ -1,0 +1,372 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-family: 微软雅黑;
+}
+
+a{
+	text-decoration:none;
+}
+
+.main{
+	width:1300px;
+	margin:0 auto;
+}
+
+.header{
+	height:50px;
+	background:#272822;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.headerLogo{
+	float: left;
+}
+
+.headerLeft{
+	float: left;
+	color:#fff;
+	line-height: 50px;
+	font-size:20px;
+	font-weight:bold;
+	margin-left:15px;
+}
+
+.headerRight{
+	float: right;
+	line-height: 50px;
+}
+
+.headerRight a{
+	color:#fff;
+	margin-left:15px;
+}
+
+.headerRight a:hover{
+	color:#ccc;
+}
+
+.nav{
+	height:5px;
+}
+
+.ads{
+	height:200px;
+}
+
+.content{
+}
+
+.content2{
+	background: #EB2E34;
+	height:500px;
+}
+
+.footer{
+	height:50px;
+	background: #272822;
+}
+
+.footer ul{
+	list-style:none;
+	padding-left:450px;
+	line-height: 50px;
+}
+
+.footer ul li{
+	float: left;
+	margin-left:15px;
+}
+
+.footer a{
+	color:#fff;
+}
+
+.footer a:hover{
+	color:#ccc;
+}
+
+.floor{
+	margin-bottom:15px;
+}
+
+.floorHeader{
+	height:30px;
+	background: #272822;
+}
+
+.floorFooter{
+	height:250px;
+	padding-top:15px;	
+	padding-bottom:5px;	
+}
+
+.floorFooter2{
+	padding-top:15px;	
+	padding-bottom:5px;	
+}
+
+.floorFooter2 .shop{
+	margin-bottom:30px;
+}
+
+.floorFooter2 table td{
+	text-align:center;
+}
+
+.floorFooter2 .comment{
+	padding-left:15px;
+	padding-right:15px;
+	height:100px;
+	margin-bottom:20px;
+	border-bottom:1px dashed #ccc;
+}
+
+.floorFooter2 .comment .left{
+	float: left;
+	width:100px;
+	height:100%;
+	text-align:center;
+	margin-left:-15px;
+	background: #888;
+	border-radius:100px;
+	color:#fff;
+}
+
+.floorFooter2 .comment .left .logo{
+	margin-top:10px;
+}
+
+.floorFooter2 .comment .right{
+	float: left;	
+	width:1165px;
+	height:100%;
+	padding-left:15px;
+}
+
+.shop{
+	width:200px;
+	height:235px;
+	float: left;
+	margin-left:100px;
+	border:5px solid #aaa;
+	border-radius:10px;
+	box-shadow:0px 0px 5px 5px #ccc;
+}
+
+.shopInfo{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.shopPrice{
+	float: right;
+}
+
+.floorHeader{
+	line-height: 30px;	
+	color:#fff;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.floorHeader a{
+	color:#fff;
+}
+.floorHeader a:hover{
+	color:#ccc;
+}
+.floorHeader .left{
+	float: left;
+}
+.floorHeader .right{
+	float: right;
+}
+
+.clear{
+	clear:both;
+}
+
+.cartDel{
+	background: #e4393c;
+	color:#fff;
+	border-radius:5px;
+	padding:5px;
+}
+
+.cartDel:hover{
+	box-shadow:1px 1px 1px 1px #ccc;
+}
+
+.cartNum{
+	background: #e4393c;
+	color:#fff;
+	border-radius:5px;
+	padding:5px 15px;
+	width:50px;
+	height:50px;
+}
+
+.cartNum:hover{
+	box-shadow:1px 1px 1px 1px #ccc;
+}
+
+.cartTot{
+	height:76px;
+}
+
+table tr{
+	height:40px;
+}
+
+table tr td{
+	border-top:1px dashed #ccc;
+}
+
+.floorFooter2Left{
+	width:150px;
+	height:300px;
+	float: left;
+	border:1px dashed #888;
+}
+
+.floorFooter2Right{
+	width:1120px;
+	/*height:280px;*/
+	float: right;
+	border:1px dashed #888;
+}
+
+
+.floorFooter2Left ul{
+	list-style:none;
+	padding:10px;
+}
+
+.floorFooter2Left ul li{
+	line-height: 30px;
+}
+
+.floorFooter2Left ul li a{
+	color:#000;
+}
+
+.floorFooter2Left ul li a:hover{
+	color:#888;
+}
+
+.floorFooter2Right{
+	padding:10px;
+}
+
+.fenmu{
+	margin-top:15px;
+}
+
+.floorFooter2Right p{
+	margin-bottom:5px;
+}
+.floorFooter2Right input[type=text]{
+	width:200px;
+}
+
+.personUseradd{
+	float: right;
+	margin-right:60px;
+}
+
+.personUseraddLeft{
+	float: left;
+}
+
+
+.loginLeft{
+	
+}
+
+.loginRight{
+
+}
+
+.login{
+	width:833px;
+	height:500px;
+	margin:0 auto;
+	background: url('../img/login.jpg');
+}
+
+.loginForm{
+	color:#fff;
+	float:right;
+	margin-top:100px;
+}
+
+.loginForm input[name]{
+	width:200px;
+	height:30px;
+	border-radius:5px;
+	padding-left:10px;
+}
+
+.loginForm p{
+	line-height:80px;
+}
+
+.loginForm input[type=submit]{
+	background: #FFDE01;
+	border:none;
+	width:210px;
+	height:30px;
+	margin-top:15px;
+	box-shadow:0 0 2px 2px #eee;
+}
+
+
+.loginForm2{
+	color:#fff;
+	float:right;
+	margin-top:70px;
+}
+
+.loginForm2 input[name]{
+	width:200px;
+	height:30px;
+	border-radius:5px;
+	padding-left:10px;
+}
+
+.loginForm2 p{
+	margin-bottom:30px;
+}
+
+.loginForm2 input[type=submit]{
+	background: #FFDE01;
+	border:none;
+	width:210px;
+	height:30px;
+	box-shadow:0 0 2px 2px #eee;
+}
+
+.vcodeImg{
+	margin-bottom:10px!important;
+}
+
+.goods{
+	height:40px;
+}
+
+.commit{
+	background: #e4393c;
+	color:#fff;
+	border-radius:5px;
+	padding:5px 15px;
+	font-weight:bold;
+}
+
+.PersonComment{
+	width:100%;
+	height:100px;
+	resize:none;
+	padding:5px;
+}

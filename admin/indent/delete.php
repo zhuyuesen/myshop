@@ -2,9 +2,9 @@
 include "../lock.php";
 include '../../public/common/config.php';
 
-$id = $_GET['id'];
+$code = $_GET['code'];
 
-$sql = "delete from brand where id = $id";
+$sql = "delete from indent where code = $code";
 
 /*echo $sql;
 

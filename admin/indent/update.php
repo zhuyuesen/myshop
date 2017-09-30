@@ -2,20 +2,19 @@
 include "../lock.php";
 include '../../public/common/config.php';
 
-$id = $_POST['id'];
+$status_id = $_POST['status_id'];
 
-$name = $_POST['name'];
+$code = $_POST['code'];
 
 
 //$sql="insert into user(username,password) values('{$username}','{$password}')";
 
 
-$sql = "update class set name='{$name}'where id = {$id}";
+$sql = "update indent set status_id='{$status_id}'where code = {$code}";
 /*
 INSERT INTO `user` (`username`, `password`) VALUES ( 'wlz', 'asd')
 
 INSERT INTO `user` (`id`, `username`, `password`, `isadmin`) VALUES (NULL, 'zys', MD5('123'), '0');*/
-
 
 
 

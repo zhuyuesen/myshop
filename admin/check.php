@@ -7,7 +7,6 @@ session_start();
 
  var_dump($password);
 
-
 $sql="select * from user where username='{$username}' and password='{$password}' and isadmin=1";
 
 $res = mysqli_query($conn,$sql);
